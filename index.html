@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ITMD-361 Internet Technologies and Web Design|Lab 04</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <form method="post" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+            <h1>Volunteer Form</h1>
+
+            <fieldset>
+                <legend>
+                    <h2>My Info</h2>
+                </legend>
+                <p>
+                    <label>First Name:<input type="text" id="first name" name="first_name_field" placeholder="first name" required></label>
+                </p>
+                <p>
+                    <label>Last Name:<input type="text" id="last name" name="last_name_field" placeholder="last name" required></label>
+                </p>
+                <p>
+                    <label>Phone Number:<input type="tel" id="phone" name="phone_field" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                </p>
+                <p>
+                    <label>Email Address:<input type="email" id="email" name="email_field" placeholder="email" required></label>
+                </p>
+                <p><label>Gender:</label>
+                    <input type="radio" id="male" name="gender_field" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender_field" value="Female">
+                    <label for="female">Female</label>
+                </p>
+
+                <label>Your Age:</label>
+                <select name="age_field">
+                    <option value="under 18">under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="65 and over">65 and over</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>My Availability</h3>
+                </legend>
+                <label>Days Available:</label>
+                <div>
+                    <input type="checkbox" id="sunday" name="availability_field" value="sunday" checked>
+                    <label for="sunday">Sunday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="monday" name="availability_field" value="monday">
+                    <label for="monday">Monday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tuesday" name="availability_field" value="tuesday" />
+                    <label for="tuesday">Tuesday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="wednesday" name="availability_field" value="wednesday" />
+                    <label for="wednesday">Wednesday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="thursday" name="availability_field" value="thursday" />
+                    <label for="thursday">Thursday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="friday" name="availability_field" value="friday" />
+                    <label for="friday">Friday</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="saturday" name="availability_field" value="saturday" />
+                    <label for="saturday">Saturday</label>
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments_field" rows="5" cols="40" maxlength="250"></textarea>
+                </div>
+            </fieldset>
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="hidden_field" placeholder="8 characters minimum" required>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+
+</html>
