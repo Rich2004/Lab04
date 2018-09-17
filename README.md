@@ -1,3 +1,3 @@
 # Lab04
 
-<h1>Lab04</h1>
+<p>This is project 04. I created a table with a variety of inputs. 
